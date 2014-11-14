@@ -331,6 +331,10 @@ cite {
 	text-shadow: #000 1px 1px;
 }
 
+table#flier {
+	margin: 0 auto;
+}
+
 .buynow h2 {
 	text-align: center;
 	min-height: 100px;
