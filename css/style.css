@@ -143,7 +143,10 @@ cite {
 	-webkit-transform: rotate(30deg);
 	transform: rotate(30deg);
 }
-
+.social-logos .instagram {
+	width: 36.5px;
+	height: auto;
+}
 /* ===============  School Images ================ */
 .school-img {
 	float: left;
