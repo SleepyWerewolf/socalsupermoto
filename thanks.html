@@ -49,6 +49,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="http://socalsupermoto.com/blog/">Blog</a></li>
           <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="store.html">Store</a></li>
           <li><a href="contact.html">Contact</a></li>
           </li>
         </ul>
@@ -62,7 +63,7 @@
       <h1>Thanks!</h1>
       <p class="lead roadway">We got your email and we'll get back to you soon!</p>
       <div class="section"><a class="button" href="index.html">Return home</a></div>
-      <div class="section"><a href="index.html"> <img src="img/logo_big.png"> </a></div>
+      <div class="section"><a href="index.html"> <img src="img/logo_blue.jpg"> </a></div>
     </div>
   </div>
 </div>
@@ -71,7 +72,7 @@
 <footer>
   <div class="container">
     <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2013 Socal Supermoto</p>
+    <p>&copy; <span class="year"></span> Socal Supermoto</p>
     <p>Website design by <a href="http://www.softwareonvinyl.com">Software on Vinyl</a></p>
   </div>
 </footer>
@@ -79,7 +80,10 @@
 <script src="js/bootstrap.min.js"></script> 
 <script>
 $(document).ready(function() {
-    $('#myCarousel').carousel()
+    var date = new Date();
+    var year = date.getFullYear();
+    $('#myCarousel').carousel();
+    $('.year').text(year);
 });
 </script>
 </body>

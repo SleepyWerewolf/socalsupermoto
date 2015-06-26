@@ -334,6 +334,14 @@ cite {
 	text-shadow: #000 1px 1px;
 }
 
+.buynow .store-item {
+  height: 800px;
+}
+
+.buynow .store-item-tall {
+  height: 860px;
+}
+
 table#flier {
 	margin: 0 auto;
 }
@@ -353,6 +361,18 @@ table#flier {
 
 .buynow p {
 	height: 110px;
+}
+
+.buynow .store-item p {
+  height: 100px;
+}
+
+.buynow p.store-item-tall {
+  height: 150px;
+}
+
+.buynow .store-item table {
+  margin: 0 auto;
 }
 
 #skillpak {

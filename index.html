@@ -32,7 +32,7 @@
 
 <!-- NAVBAR
     ================================================== -->
-<span class="logo"><img src="img/logo_big.png"></span><div class="navbar navbar-inverse navbar-static-top">
+<span class="logo"><img src="img/logo_blue.jpg"></span><div class="navbar navbar-inverse navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -50,6 +50,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="http://socalsupermoto.com/blog/">Blog</a></li>
           <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="store.html">Store</a></li>
           <li><a href="contact.html">Contact</a></li>
           </li>
         </ul>
@@ -193,7 +194,7 @@
   <!-- FOOTER -->
   <footer>
     <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2013 Socal Supermoto LLC</p>
+    <p>&copy; <span class="year"></span> Socal Supermoto LLC</p>
     <p>Website design by <a href="http://www.softwareonvinyl.com">Software on Vinyl</a></p>
   </footer>
 </div>
@@ -207,7 +208,10 @@
 <script src="js/bootstrap.min.js"></script> 
 <script>
 $(document).ready(function() {
-    $('#myCarousel').carousel()
+    var date = new Date();
+    var year = date.getFullYear();
+    $('#myCarousel').carousel();
+    $('.year').text(year);
 });
 </script>
 </body>
