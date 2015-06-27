@@ -338,10 +338,6 @@ cite {
   height: 800px;
 }
 
-.buynow .store-item-tall {
-  height: 860px;
-}
-
 table#flier {
 	margin: 0 auto;
 }
@@ -361,14 +357,6 @@ table#flier {
 
 .buynow p {
 	height: 110px;
-}
-
-.buynow .store-item p {
-  height: 100px;
-}
-
-.buynow p.store-item-tall {
-  height: 150px;
 }
 
 .buynow .store-item table {
@@ -433,6 +421,20 @@ table#flier {
 	}
 }
 
+@media (min-width: 1200px) {
+  .buynow .store-item-tall {
+    height: 860px;
+  }
+  
+  .buynow .store-item p {
+    height: 100px;
+  }
+
+  .buynow p.store-item-tall {
+    height: 150px;
+  }
+}
+
 /* Featurettes
 ------------------------- */
 
@@ -485,6 +487,23 @@ table#flier {
 
 .carousel .item {
 	height: 550px;
+}
+
+/*--------------  Contest ----------------- */
+
+.fb-contest-container {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contest-sidebar {
+  margin-top: 30px;
+}
+
+.contest-sidebar, .contest-sidebar p, .contest-sidebar form {
+  font-size: 20px;
+  text-align: center;
 }
 
 /* RESPONSIVE CSS
